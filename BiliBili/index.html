@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>bilibili</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>bilibili</title>
+  <script>
+      var metaEl = document.createElement('meta');
+      var scale = 1/window.devicePixelRatio
+      metaEl.setAttribute('name', 'viewport');
+      metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+      document.firstElementChild.appendChild(metaEl)
+    </script>
+    
+</head>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>

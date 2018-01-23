@@ -10,6 +10,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less">
+@import './css/common.less';
+@import './css/reset.css';
 </style>
+
